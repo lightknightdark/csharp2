@@ -189,6 +189,52 @@ namespace examPractice
 
         }
 
+      static void list(){
+  List<List<string>> fruitsAndOrigins = new List<List<string>>()
+        {
+            new List<string> { "Banana", "Guyana" },
+            new List<string> { "Plantain", "Guyana" },
+            new List<string> { "Mango", "Guyana" },
+            new List<string> { "Cashew", "Guyana" },
+            new List<string> { "Kiwi", "New Zeeland" },
+            new List<string> { "Apple", "New Zeeland" },
+            new List<string> { "Avocado", "New Zeeland" },
+            new List<string> { "Cherry", "New Zeeland" },
+            new List<string> { "Banana", "Ecuador" },
+            new List<string> { "Persimmon", "Spain" },
+            new List<string> { "Orange", "Spain" },
+            new List<string> { "Mandarin", "Spain" },
+            new List<string> { "Blueberry", "Canada" },
+            new List<string> { "Strawberry", "Russia" },
+            new List<string> { "Persimmon", "Israel" },
+            new List<string> { "Dates", "Israel" },
+            new List<string> { "Pomegranates", "Israel" },
+            new List<string> { "Dragon Fruit", "China" },
+            new List<string> { "Apple", "China" },
+            new List<string> { "Pear", "China" },
+            new List<string> { "Pomelo", "China" },
+            new List<string> { "Cherry", "China" },
+            new List<string> { "Mandarin", "China" },
+            new List<string> { "Figs", "Chile" },
+            new List<string> { "Avocado", "Chile" },
+            new List<string> { "Blueberry", "Chile" },
+            new List<string> { "Cherry", "Chile" },
+            new List<string> { "Grape", "Chile" },
+            new List<string> { "Plum", "Chile" },
+            new List<string> { "Pineapple", "Guatemala" },
+            new List<string> { "Banana", "Guatemala" },
+            new List<string> { "Papaya", "Guatemala" },
+            new List<string> { "Lemon", "Mexico" },
+            new List<string> { "Tomato", "Mexico" },
+            new List<string> { "Blueberry", "Mexico" },
+            new List<string> { "Avocado", "Mexico" }
+        };
 
+          foreach (var fruitOrigin in fruitsAndOrigins)
+        {
+            Console.WriteLine($"{fruitOrigin[0]}: {fruitOrigin[1]}");
+        }
+
+      }
     }
 }
