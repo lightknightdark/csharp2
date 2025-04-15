@@ -1,5 +1,4 @@
-﻿using examCLass;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -7,15 +6,6 @@ using System.Threading.Tasks;
 
 namespace examPractice
 {
-    using System;
-    using System.Collections.Generic;
-    using System.Linq;
-
-
-    public static void Main(string[] args)
-    {
-        hashSet();
-    }
     public class Fruit
     {
         public string Name { get; set; }
@@ -64,36 +54,7 @@ namespace examPractice
         new Fruit(){ Name="Blueberry", Origin="Mexico", Price=2.56},
         new Fruit(){ Name="Avocado", Origin="Mexico", Price=0.45 }
     };
-
-        static void hashSet()
-        {
-            Console.WriteLine("Question 1a: Create a HashSet of all the fruit names");
-
-            // Initialize a HashSet collection that will store strings.
-            HashSet<string> fruitNameSet = new HashSet<string>();
-
-            // Add the names of the fruits from the list collection.
-            foreach (var fruit in fruits)
-            {
-                fruitNameSet.Add(fruit.Name);
-            }
-
-            Console.WriteLine($"Type: {fruitNameSet.GetType()}");
-
-            // Print a numbered list of the above Set.
-            int counter = 1;
-            foreach (var name in fruitNameSet)
-            {
-                Console.WriteLine($" {counter}: {name}");
-                counter++;
-            }
-        }
-
-     
     }
-
-
 }
 
-
-
+    

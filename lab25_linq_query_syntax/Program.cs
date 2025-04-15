@@ -12,11 +12,15 @@ namespace lab25_linq_query_syntax
         static void Main(string[] args)
         {
             Assets();
-            //noUS();
-            //femaleIndia();
-            //lenghtLessTahnFive();
-            //sortAssets();
-            //groupCountry();
+            noUS();
+            femaleIndia();
+            lenghtLessTahnFive();
+            sortAssets();
+            groupCountry();
+            sortGroupCountry();
+            firstLastNameGroup();
+            averageCountry();
+            topWealthiest();
         }
 
         static void Assets() {

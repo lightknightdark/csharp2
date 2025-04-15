@@ -39,21 +39,21 @@ namespace Premier_Application
         {
             if (premiers.TryGetValue(key, out Premier premier))
             {
-                // a. Set first label (Name and Life)
+     
                 label1.Text += $"{premier.Name} {premier.Life}";
 
-                // b. Set second label (Start and End)
-                label2.Text += $"From {premier.Start} to {premier.End}";
+       
+                label2.Text += $" Office from {premier.Start} to {premier.End}";
 
-                // c. Set third label (Constituent)
+        
                 label3.Text += premier.Constituent;
 
-                // d. Set fourth label (Party)
+      
                 label4.Text += premier.Party;
 
-                // e. Set PictureBox image
-                pictureBox1.ImageLocation = $"images\\{key}.jpg";
-                MessageBox.Show(pictureBox1.ImageLocation);
+        
+              //  pictureBox1.ImageLocation = $"images\\{key}.jpg";
+              //  MessageBox.Show(pictureBox1.ImageLocation);
 
                 string[] imageFiles = Directory.GetFiles(imageBasePath, "*.jpg");
                 string matchingImage = imageFiles.FirstOrDefault(file =>

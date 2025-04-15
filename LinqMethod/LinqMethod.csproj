@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{ADC04D55-09AF-41C4-9F54-EF832F6F7205}</ProjectGuid>
+    <ProjectGuid>{2D1CA3A5-EAD1-41FE-99B1-9AA6E952BD5C}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>examPractice</RootNamespace>
-    <AssemblyName>examPractice</AssemblyName>
+    <RootNamespace>LinqMethod</RootNamespace>
+    <AssemblyName>LinqMethod</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -43,7 +43,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Fruit.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -51,9 +50,9 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\examCLass\examCLass.csproj">
-      <Project>{a58251a6-a8f6-4e14-a456-9b2a7348929d}</Project>
-      <Name>examCLass</Name>
+    <ProjectReference Include="..\Linq\Linq.csproj">
+      <Project>{aa8fe9ab-eca0-4ef7-b74e-f93ac7cecfad}</Project>
+      <Name>Linq</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{ADC04D55-09AF-41C4-9F54-EF832F6F7205}</ProjectGuid>
+    <ProjectGuid>{8F0A6429-ECDE-4D0A-B613-1DBD915619CF}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>examPractice</RootNamespace>
-    <AssemblyName>examPractice</AssemblyName>
+    <RootNamespace>practiceq2</RootNamespace>
+    <AssemblyName>practiceq2</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -43,18 +43,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Fruit.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\examCLass\examCLass.csproj">
-      <Project>{a58251a6-a8f6-4e14-a456-9b2a7348929d}</Project>
-      <Name>examCLass</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
